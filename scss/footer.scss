@@ -1,0 +1,93 @@
+// @import 'variables.scss';
+.footr {
+    background-color: $maintext-color;
+    font-size: 0.8rem;
+    color: #000000;
+
+
+    &__cellfour {
+        min-width: 150px;
+    }
+    &__phone {
+        color: $btn-color;
+
+        &:hover {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $btn-color;
+            text-decoration: none;
+        }
+    }
+
+    &__link {
+        color: #000000;
+
+        &:hover {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $btn-color;
+            text-decoration: none;
+        }
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.99px) {
+    .footr {
+        font-size: 0.9rem;
+        padding-left: 15px;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .footr {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footr {
+
+        &__scell {
+            min-width: 120px;
+        }
+
+        &__pcell {
+            min-width: 120px;
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    .footr {
+
+        &__ccell {
+            min-width: 165px;
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .footr {
+        font-size: 1.05rem;
+
+        &__ccell {
+            min-width: 240px;
+        }
+    }
+}

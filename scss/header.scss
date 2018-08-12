@@ -1,0 +1,135 @@
+@import 'variables.scss';
+
+.logo {
+    height: 55px;
+    width: 100px;
+
+    &__svg {
+        width: 100px;
+        height: 45px;
+        pointer-events: none;
+    }
+
+    &__fallback {
+        background: url('../assets/images/logo.png');
+        width: 85px;
+        height: 38.25px;
+        background-size: contain; 
+        // width: 60pt;
+        // height: 26.88pt;
+    }
+}
+
+.menu {
+    background-color: $back-color;
+
+   &__svg {
+        width: 30px;
+        height: 26.25px;
+        pointer-events: none;
+    }
+
+        &__fallback {
+        background: url('../assets/images/burger.png');
+        width: 30px;
+        height: 26.25px;
+        background-size: contain; 
+    }
+
+    &__tggsp {
+
+        &:hover {
+            color: $btn-color;
+        }
+    }
+
+    &__tggbtn {
+// padding-top: 10px;
+
+        &:hover {
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            outline: none;
+        }
+    }
+
+    // &__item {
+    // background-color: $back-colors;
+    // }
+
+    &__link {
+        color: $maintext-color;
+
+
+        &:hover {
+            color: $btn-color;
+        }
+    }
+
+    // &__under {
+    //     background-color: $back-color;
+    //     color: $maintext-color;
+    // }
+
+    // &__underitem {
+    //     color: $maintext-color;
+
+
+    //     &:hover {
+    //         color: $btn-color;
+    //         background-color: transparent;
+    //     }
+    // }
+
+    &__phone {
+        color: $maintext-color;
+        font-size: 0.85rem;
+
+        &:hover {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: $btn-color;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: $btn-color;
+            text-decoration: none;
+        }
+    }
+}
+
+@media all and (min-width: 360px) {
+    .menu {
+
+        &__phone {
+        font-size: 1em;
+           }
+
+   &__svg {
+        width: 34.286px;
+        height: 30px;
+    }
+
+           &__fallback {
+        width: 34.286px;
+        height: 30px;
+    }
+
+}
+}
+
+@media all and (min-width: 576px) {
+    .menu {
+position: static;
+}
+}
